@@ -14,6 +14,8 @@ const thirdpop=document.querySelector(".thirdpop");
 const dropdownicon=document.querySelector("#dropdownpop");
 const dropdownpop=document.querySelector(".dropdownpop");
 
+const incomeRegex = /^-?\d*\.?\d+$/;
+
 //info icon(question mark)
 
 const gross_icon=document.querySelector("#mark1");
@@ -125,6 +127,16 @@ form.addEventListener("input",(e)=>{
             first_icon.style.opacity=0;
         }
 
+        // if(!incomeRegex.test(annual.value))
+        // {
+        //     first_icon.style.opacity=1;
+        //     firstpop.textContent="Enter Numbers only!";
+        // }
+        // else
+        // {
+        //     first_icon.style.opacity=0;
+        // }
+
 
     }
 
@@ -139,7 +151,17 @@ form.addEventListener("input",(e)=>{
         {
             second_icon.style.opacity=0;
         
-         } 
+        }
+        
+        // if(!incomeRegex.test(extra.value))
+        // {
+        //     second_icon.style.opacity=1;
+        //     secondpop.textContent="Enter Numbers only!";
+        // }
+        // else
+        // {
+        //     second_icon.style.opacity=0;
+        // }
     }
 
    if(e.target.name == "deductions")
@@ -153,7 +175,17 @@ form.addEventListener("input",(e)=>{
         {
             third_icon.style.opacity=0;
         }
-   }
+
+//         if(deductions.value!=="" && !incomeRegex.test(deductions.value))
+//         {
+//             third_icon.style.opacity=1;
+//             thirdpop.textContent="Enter Numbers only!";
+//         }
+//         else
+//         {
+//             third_icon.style.opacity=0;
+//         }
+    }
 
    if(age.value!=="")
    {
@@ -247,4 +279,54 @@ form.addEventListener("submit",(e)=>{
 
     form.reset();
     
+});
+
+
+
+
+
+form.addEventListener("change",(e)=>{
+
+    if(e.target.name == "gross")
+    {
+        if(annual.value!=="" && !incomeRegex.test(annual.value))
+        {
+            first_icon.style.opacity=1;
+            firstpop.textContent="Enter Numbers only!";
+        }
+        else
+        {
+            first_icon.style.opacity=0;
+        }
+
+
+    }
+
+    if(e.target.name == "extra")
+    {
+        if(extra.value!=="" && !incomeRegex.test(extra.value))
+        {
+            second_icon.style.opacity=1;
+            secondpop.textContent="Enter Numbers only!";
+        }
+        else
+        {
+            second_icon.style.opacity=0;
+        }
+    }
+
+   if(e.target.name == "deductions")
+   {
+
+        if(deductions.value!=="" && !incomeRegex.test(deductions.value))
+        {
+            third_icon.style.opacity=1;
+            thirdpop.textContent="Enter Numbers only!";
+        }
+        else
+        {
+            third_icon.style.opacity=0;
+        }
+   }
+
 });
