@@ -219,7 +219,7 @@ form.addEventListener("submit",(e)=>{
             {
                 const taxed=30/100;
 
-                const after_taxed=taxed*overall;
+                const after_taxed=overall-taxed*overall;
                 dynamic_heading.textContent=`Your overall income will be ${after_taxed.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ",")}`;
                 dynamic_footer.textContent="after tax deductions";
                 
@@ -227,7 +227,7 @@ form.addEventListener("submit",(e)=>{
             else if(age.value==">=40 && less than 60")
             {
                 const taxed=40/100;
-                const after_taxed=taxed*overall;
+                const after_taxed=overall-taxed*overall;
                 dynamic_heading.textContent=`Your overall income will be ${after_taxed.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ",")}`;
                 dynamic_footer.textContent="after tax deductions";
                 
@@ -235,7 +235,7 @@ form.addEventListener("submit",(e)=>{
             else
             {
                 const taxed=10/100;
-                const after_taxed=taxed*overall;
+                const after_taxed=overall-taxed*overall;
                 dynamic_heading.textContent=`Your overall income will be ${after_taxed.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ",")}`;
                 dynamic_footer.textContent="after tax deductions";
                 
