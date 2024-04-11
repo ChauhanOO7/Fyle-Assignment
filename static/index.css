@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.header
+{
+    height: 6%;
+    background-color: black;
+}
+
+/* form */
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32%;
+    width: 35%;
+    justify-content: space-evenly;
+    font-weight: 900;
+    height: 94%;
+}
+
+form > span
+{
+    height: 6%;
+}
+
+form > span > input
+{
+    border: 1px solid gray;
+    height: 100%;
+    width: 95%;
+    margin-right: 0.5%;
+}
+
+form > span > img{
+
+    opacity: 0;
+    width: 4%;
+    height: 61%;
+    cursor: pointer;
+}
+
+form > span > select
+{
+    height: 100%;
+    width: 95%;
+    margin-right: 0.5%;
+}
+
+form > label > img
+{
+    width: 3.5%;
+    height: 75%;
+    cursor: pointer;
+    margin-left: 0.5%;
+}
+
+form > p
+{
+    opacity: 0;
+    padding-top: 0.5%;
+    font-weight: 400;
+    font-size: 0.8em;
+    position:absolute;
+    border-radius: 9%;
+    background-color: #4d5c6c;
+    color: white;
+    width: 12%;
+    height: 6%;
+}
+
+.firstpop
+{
+    top: 19.5%;
+    left: 68%;
+}
+.secondpop{
+    top: 39%;
+    left: 68%;
+}
+
+.thirdpop
+{
+    top: 78.5%;
+    left: 68%;
+}
+
+.dropdownpop
+{
+    top: 59%;
+    left: 68%;
+}
+
+form > button
+{
+    background-color: #645cf4;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    height: 5%;
+    width: 95%;
+}
+
+
+/* modal */
+
+.modal-body{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.modal-body > h3,p{
+    text-align: center;
+}
+
+.modal-footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer > button
+{
+    background-color: #645cf4;
+    color: white;
+}
+
+
+/* information about each input */
+
+.info
+{
+    opacity: 0;
+    background-color: #4d5c6c;
+    color: white;
+    width: 10%;
+    position: absolute;
+}
+
+.gross_info
+{
+    bottom: 79%;
+    left: 48%;
+    font-size: 0.9em;  
+}
+
+.extra_info
+{
+    bottom: 61%;
+    left: 44%;
+    font-size: 0.9em;  
+}
+
+.age_info
+{
+    bottom: 42%;
+    left: 42.5%;
+    font-size: 0.9em;  
+}
+
+.spent_info
+{
+    bottom: 24%;
+    left: 51%;
+    font-size: 0.9em;  
+}
+
+
+
+

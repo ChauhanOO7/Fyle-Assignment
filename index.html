@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/index.css">
+    <link rel="icon" type="image/png" href="./static/icons/favicon.ico">
+    <title>Tax Calculator</title>
+</head>
+<body>
+
+    <div class="header">
+
+    </div>
+
+    <form>
+        <label for="gross">Enter gross annual income<img id="mark1" src="./static/icons/question_13977645.png" alt=""></label>
+        <span><input type="text" id="gross" name="gross" placeholder="Enter gross annual income"><img id="firstpop" src="./static/icons/warning.png" alt=""></span>
+        <p class="firstpop">Enter numbers only</p>
+        <label for="extra">Enter extra income<img id="mark2" src="./static/icons/question_13977645.png" alt=""></label>
+        <span><input type="text" id="extra" name="extra" placeholder="Enter extra income"><img id="secondpop" src="./static/icons/warning.png" alt=""></span>
+        <p class="secondpop">Enter numbers only</p>
+        <label for="age">Enter age group<img id="mark3" src="./static/icons/question_13977645.png" alt=""></label>
+        <span><select id="age">
+            <option></option>
+            <option>less than 40</option>
+            <option>>=40 && less than 60</option>
+            <option>>= 60</option>
+        </select><img id="dropdownpop" src="./static/icons/warning.png" alt=""></span>
+        <p class="dropdownpop">Input field is mandatory!</p>
+        <label for="deductions">Enter total applicable deductions<img id="mark4" src="./static/icons/question_13977645.png" alt=""></label>
+        <span><input type="text" id="deductions" name="deductions" placeholder="Add total applicable deductions"><img id="thirdpop" src="./static/icons/warning.png" alt=""></span>
+        <p class="thirdpop">Enter numbers only</p>
+        <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button> <!-- Button trigger modal -->
+    </form>
+    
+    <!-- info about each input -->
+
+    <p class="info gross_info">Gross annual income is you total salary in a year before any deductions</p>
+    <p class="info extra_info">Extra income is your money come from different souce</p>
+    <p class="info age_info">Tell from which age group you belong</p>
+    <p class="info spent_info">Money spent in a year</p>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./static/index.js"></script>
+</body>
+</html>
