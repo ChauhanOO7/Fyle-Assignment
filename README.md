@@ -18,4 +18,4 @@
 
   It will redirect you to browser.
 
-# Now you have your application on your local machine.
+# Now you have your application on local machine.
