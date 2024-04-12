@@ -14,7 +14,7 @@ const thirdpop=document.querySelector(".thirdpop");
 const dropdownicon=document.querySelector("#dropdownpop");
 const dropdownpop=document.querySelector(".dropdownpop");
 
-const incomeRegex = /^-?\d*\.?\d+$/;
+const incomeRegex = /^\d*\.?\d+$/;
 
 //info icon(question mark)
 
